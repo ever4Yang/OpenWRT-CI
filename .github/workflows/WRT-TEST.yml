@@ -12,11 +12,12 @@ on:
         type: choice
         options: [immortalwrt/immortalwrt, King-Of-Knights/openwrt-6.x, coolsnowwolf/lede]
       BRANCH:
-        default: 'master'
+        default: 'main'
         required: true
-        type: string
+        type: choice
+        options: [main,master]
       TARGET:
-        default: 'Mediatek'
+        default: 'Qualcommax'
         required: true
         type: choice
         options: [ Qualcommax]
@@ -27,7 +28,7 @@ on:
         options: [argon, design]
       TEST:
         description: '仅输出配置文件，不编译固件。'
-        default: 'true'
+        default: 'false'
         required: true
         type: boolean
       PACKAGE:
