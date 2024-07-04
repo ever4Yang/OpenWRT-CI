@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       SOURCE:
-        default: 'immortalwrt/immortalwrt'
+        default: 'King-Of-Knights/openwrt-6.x'
         required: true
         type: choice
         options: [ King-Of-Knights/openwrt-6.x,immortalwrt/immortalwrt, coolsnowwolf/lede]
